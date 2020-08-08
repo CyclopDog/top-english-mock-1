@@ -1,0 +1,282 @@
+$orange: #f09600;
+$purple: #7d679c;
+$gray: #cecdc7;
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #eee;
+}
+
+header {
+  position: relative;
+  background-color: $orange;
+  height: 130px;
+}
+
+.purple-line {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: $purple;
+  margin-bottom: 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    background-color: $gray;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    width: 50px;
+    height: 50px;
+    bottom: -10px;
+  }
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  h1 {
+    font-size: 10vw;
+  }
+}
+
+.chalkboard {
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    &:first-child {
+      img {
+        width: 100%;
+      }
+    }
+    &:last-child {
+      font-size: 1.4em;
+      text-align: center;
+      border: 4px solid $orange;
+      border-radius: 25px;
+      position: relative;
+      background-color: white;
+    }
+  }
+}
+
+.canada {
+  height: 400px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-image: url("../imgs/alberta-2297204_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 3em;
+  p {
+    border-bottom: 5px solid $orange;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.leaf {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  border-top: 4px solid $purple;
+  border-bottom: 4px solid $purple;
+  padding: 20px;
+  img {
+    width: 50px;
+    margin: 0 auto;
+  }
+  p {
+    text-align: center;
+    font-size: 1.4em;
+  }
+}
+
+.price {
+  margin-top: 10px;
+  div {
+    display: flex;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+    div {
+      text-align: center;
+      color: white;
+      font-size: 1.7em;
+      &:first-child {
+        clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+        background-color: $orange;
+      }
+      &:nth-child(2) {
+        background-color: white;
+        border: 6px solid $gray;
+        color: black;
+        position: relative;
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $gray;
+          height: 50px;
+          width: 75px;
+        }
+        &::before {
+          top: 0;
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+        }
+        &::after {
+          bottom: 0;
+          clip-path: polygon(50% 0, 100% 100%, 0 100%);
+        }
+      }
+      &:last-child {
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+        background-color: $purple;
+      }
+    }
+  }
+}
+
+.form-call {
+  min-height: 200px;
+  margin-top: 10px;
+  max-width: 300px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid $orange;
+  border-radius: 10px;
+  font-size: 2em;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $orange;
+    height: 50px;
+    width: 60px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    bottom: -50px;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.form {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  form {
+    width: 100%;
+    background-color: white;
+    max-width: 576px;
+    padding: 10px;
+    border: 4px solid $purple;
+    box-sizing: border-box;
+    div {
+      label {
+        display: block;
+        margin-top: 10px;
+        font-size: 25px;
+      }
+      input {
+        width: 100%;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: none;
+        border-bottom: 3px solid $orange;
+        font-size: 25px;
+        &:focus {
+          background-color: white;
+          border: 2px solid $orange;
+        }
+      }
+    }
+    button {
+      margin-top: 10px;
+      border: none;
+      cursor: pointer;
+      height: 60px;
+      width: 80px;
+      background-color: $orange;
+      color: white;
+      font-size: 25px;
+      border-radius: 10px;
+      transition: 0.2s;
+      &:hover {
+        background-color: rgb(253, 194, 83);
+      }
+    }
+  }
+}
+
+.box {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  div {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: 6px solid $purple;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price {
+    div {
+      div {
+        &:first-child {
+          clip-path: none;
+        }
+        &:last-child {
+          clip-path: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .form {
+    form {
+      padding: 0 5px;
+      border: none;
+      border-top: 4px solid $purple;
+      border-bottom: 4px solid $purple;
+    }
+    button {
+        margin-bottom: 5px;
+    }
+  }
+}
