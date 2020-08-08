@@ -1,8 +1,7 @@
 function handleSubmit() {
     event.preventDefault()
-    document.getElementById("form").reset()
+    event.target.reset()
 
     // TODO: API Handle
-
     window.location.replace("./obrigado.html")
 }
