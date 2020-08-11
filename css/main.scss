@@ -208,6 +208,9 @@ header {
           background-color: white;
           border: 2px solid $purple;
         }
+        &.red-border {
+          border: 2px solid red;
+        }
       }
     }
     button {
@@ -225,6 +228,16 @@ header {
         background-color: #947ab8;
       }
     }
+  }
+  .error {
+    background: none;
+    color: red;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 22px;
   }
 }
 
@@ -269,7 +282,7 @@ header {
       border: none;
     }
     button {
-        margin-bottom: 5px;
+      margin-bottom: 5px;
     }
   }
 }

@@ -97,19 +97,23 @@
       <form onsubmit="handleSubmit()">
         <div>
           <label>Nome</label>
-          <input type="text" required />
+          <input type="text"  name="name" id="name" onchange="handleChange()" />
+          <p id="name-error" class="error"></p>
         </div>
         <div>
           <label>Email</label>
-          <input type="email" required />
+          <input type="email"  name="email" id="email" onchange="handleChange()" />
+          <p id="email-error" class="error"></p>
         </div>
         <div>
           <label>CPF</label>
-          <input type="number" required />
+          <input type="text"  name="cpf" id="cpf" onchange="handleChange()" />
+          <p id="cpf-error" class="error"></p>
         </div>
         <div>
           <label>Telefone</label>
-          <input type="number" required />
+          <input type="text"  name="phone" id="phone" onchange="handleChange()" />
+          <p id="phone-error" class="error"></p>
         </div>
         <button type="submit">Enviar</button>
       </form>
