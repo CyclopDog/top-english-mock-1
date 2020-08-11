@@ -280,6 +280,10 @@ header {
   border: 2px solid #7d679c;
 }
 
+.form form div input.red-border {
+  border: 2px solid red;
+}
+
 .form form button {
   margin-top: 10px;
   border: none;
@@ -296,6 +300,17 @@ header {
 
 .form form button:hover {
   background-color: #947ab8;
+}
+
+.form .error {
+  background: none;
+  color: red;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 5px;
+  min-height: 22px;
 }
 
 .box {
